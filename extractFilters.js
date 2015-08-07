@@ -14,7 +14,7 @@ module.exports = function() {
     req.happyRest.filters = {};
 
     var filters = req.query;
-    console.log(req.query);
+    
     if (filters) {
 		_.mapObject(filters, function(val, key) {
 			if (!_.contains(['range', 'fields', 'sort', 'desc'], key)) {
