@@ -6,8 +6,8 @@
 **/
 var _ = require('underscore');
 
-module.exports = function() {
-  return function extractFilters(req, res, next) {
+module.exports = {
+  extractFilters: function(req, res, next) {
     if (!req.happyRest) req.happyRest = {};
     if (req.happyRest.filters) return next();
 
@@ -32,5 +32,5 @@ module.exports = function() {
 		});
 	}
     next();
-  };
+  }
 };

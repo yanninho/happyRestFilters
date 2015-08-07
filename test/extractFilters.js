@@ -4,7 +4,7 @@ var express = require('express')
 
 var app = express();
 
-app.use(extractFilters());
+app.use(extractFilters.extractFilters);
 
 app.use(function(req, res, next){
   res.end(JSON.stringify(req.happyRest.filters));

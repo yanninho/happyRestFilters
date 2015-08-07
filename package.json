@@ -1,6 +1,6 @@
 {
   "name": "happyrestfilters",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Express middleware which extract filters from request",
   "main": "extractFilters.js",
   "scripts": {
